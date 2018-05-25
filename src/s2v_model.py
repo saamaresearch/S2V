@@ -286,7 +286,7 @@ class s2v(object):
 
     # Targets
     targets_np = np.zeros((FLAGS.batch_size, FLAGS.batch_size))
-    ctxt_sent_pos = range(-FLAGS.context_size, FLAGS.context_size + 1)
+    ctxt_sent_pos = list(range(-FLAGS.context_size, FLAGS.context_size + 1))
     ctxt_sent_pos.remove(0)
     for ctxt_pos in ctxt_sent_pos:
       targets_np += np.eye(FLAGS.batch_size, k=ctxt_pos)

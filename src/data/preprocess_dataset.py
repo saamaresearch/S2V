@@ -99,7 +99,7 @@ def _build_vocabulary(input_files):
     vocab = collections.OrderedDict()
     with tf.gfile.GFile(FLAGS.vocab_file, mode="r") as f:
       for i, line in enumerate(f):
-        word = line.decode("utf-8").strip()
+        word = line.strip()
         if word in vocab:
           print('Duplicate word:', word)
         #assert word not in vocab, "Attempting to add word twice: %s" % word
