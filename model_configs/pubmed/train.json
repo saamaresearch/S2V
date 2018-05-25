@@ -1,0 +1,16 @@
+{
+	"encoder": "gru",
+	"encoder_dim": 1200,
+	"bidir": true,
+	"checkpoint_path": "",
+	"vocab_configs": [
+	{
+		"mode": "trained",
+		"name": "word_embedding",
+		"dim": 620,
+		"size": 5443657,
+		"vocab_file": "~/S2V/src/data/dictionary.txt",
+		"embs_file": ""
+	}
+	]
+}
